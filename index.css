@@ -15,7 +15,7 @@
 
 body {
     background: rgb(0, 0, 0);
-    
+    font-family: 'Ubuntu';
     
 }
 
@@ -173,32 +173,52 @@ margin-bottom: 10px;
 }
 
 .sobre-container {
-    display: -webkit-flex;
-    display: -moz-box;
     display: flex;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     margin-left: 80px;
 }
 
 .main-sobre {
     color: #fff;
-    display: grid;
-    grid-template-columns:  1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
+    display: flex;
+    justify-content: flex-start;
     z-index: 1;
     width: 100%;
     max-width: 1000px;
-    padding: 0 60px; 
+    padding: 0 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .sobre-content {
     font-size: 28px;
+    margin-top: 10px;
+    
+}
+
+.btn-sobre {
+    
+        background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+        margin-top: 20px;
+        border:none;
+        border-radius: 10px;
+        font-family: 'Ubuntu';
+        font-size: 1.3rem;
+        width: 220px;
+        height: 58px;
+        cursor: pointer;
+        font-weight: normal;
+        transition: 0.8s ease-out;
+        
+    
+}
+
+.btn-sobre:hover {
+    background: #ebebeb;
+    transform: scale(1.073);
+    transition: all 0.5s;
 }
 
 
@@ -262,24 +282,83 @@ margin-bottom: 10px;
 }
   
 
+.line-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+
 .section-3 {
-    padding: 16vh 0;
-    transition: ease 0.8s; 
+    transition: ease 0.8s;
+    background: #1e1e1e;
+    border-radius: 30px;
+    padding: 6vh;
+     
 }
 
 .contato-container {
-    display: -webkit-flex;
-    display: -moz-box;
     display: flex;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
     justify-content: center;
     margin-bottom: 60px;
+    margin-left: 80px;
+    align-items: center;
 }
 
 .line {
-    width: 3.5px;
+    width: 3px;
     height: 100px;
-    
     background: linear-gradient(180deg,#ffa600,rgba(153,109,255,0));
+}
+
+
+.contato-content {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.title-content {
+    background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-planos {
+    background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+    margin-top: 20px;
+    border:none;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-size: 1.3rem;
+    width: 220px;
+    height: 58px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: 0.8s ease-out;
+    
+}
+
+.btn-planos:hover {
+    background: #000000;
+    transform: scale(1.073);
+    transition: all 0.5s ;
+    color: #ebebeb;
+    
+}
+
+.img-contato {
+    border-radius: 10px;
+    margin: 10px;
 }
