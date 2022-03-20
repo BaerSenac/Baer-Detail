@@ -13,12 +13,15 @@
 
 
 
-body {
+html,body {
+    width: 100%;
+    height: 100%;
     background: rgb(0, 0, 0);
     font-family: 'Ubuntu';
     
     
 }
+
 
 .img-logo {
     height: 130px;
@@ -291,7 +294,7 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     padding: 3vh 0 25vh;
-    margin-left: 80px;
+    
 }
 
 
@@ -375,18 +378,109 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     padding: 15vh 0 20vh;
-    margin-left: 80px;
+    
 }
 
 
-
-
-.carousel-inner {
-    position: relative;
+.container-carrossel {
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
     display: flex;
-    justify-content: space-between;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.container-title-carrossel {
     align-items: center;
 }
+
+.title-carrossel {
+    background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+.img-carrossel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-carrossel {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 130%;
+    right: 0%;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    
+}
+
+
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.btn-galery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 24px; */
+    margin-left: 130%;
+    text-align: center;
+}
+
+.footer-container {
+    background: #161616;
+    width: 100%;
+    height: 15%;
+}
+
+
 
