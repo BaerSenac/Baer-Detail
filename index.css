@@ -16,7 +16,7 @@
 html,body {
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 0);
+    background: #121214;
     font-family: 'Ubuntu';
     
     
@@ -34,7 +34,7 @@ html,body {
 }
 
 .navbar {
-    background: #000000F0;
+    background: #0b0b0c;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -303,11 +303,24 @@ margin-bottom: 10px;
 
 
 .section-3 {
-    transition: ease 0.8s;
-    background: #1e1e1e;
+    transition: all 0.8s ease 0s;
+    background: rgb(30, 30, 30);
     border-radius: 30px;
-    height: 55%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
      
+}
+
+@media screen and (max-width:1300px) {
+    
+    .img-contato {
+        width: 400px;
+        height: 400px;
+        
+    }
+
 }
 
 .contato-container {
@@ -319,7 +332,7 @@ margin-bottom: 10px;
 }
 
 .line {
-    width: 3px;
+    width: 2px;
     height: 100px;
     background: linear-gradient(180deg,#ffa600,rgba(153,109,255,0));
 }
@@ -384,6 +397,8 @@ margin-bottom: 10px;
 }
 
 
+
+
 .container-carrossel {
     width: 100%;
     height: 100%;
@@ -392,12 +407,15 @@ margin-bottom: 10px;
     display: flex;
     transform-style: preserve-3d;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 5rem;
+}
 }
 
 .container-title-carrossel {
+    align-items: center;
+}
+
+.title-container {
     align-items: center;
 }
 
@@ -425,6 +443,31 @@ input[type=radio]{
     object-fit: cover;
 }
 
+.img-carrossel-1 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: grid;
+    align-items: ;
+}
+
+.title-card {
+   color: #252525; 
+   font-size: 1.7rem;
+   padding: 20px;
+}
+
+.subtitle-card {
+    color: #636060;
+    font-size: 1.5rem;
+}
+
+.list-card {
+    color: #636060;
+    text-align: initial;
+    margin: 20px;
+}
+
 .card-carrossel {
     position: absolute;
     width: 60%;
@@ -434,16 +477,15 @@ input[type=radio]{
     margin: auto;
     cursor: pointer;
     transition: transform 0.4s ease;
-    
+    align-items: center;
+    text-align: center;
+   
 }
 
 
 
 .cards {
-    position: relative;
-    width: 100%;
     height: 100%;
-    margin-bottom: 20px;
 }
 
 #item-1:checked ~ .cards #song-3,
