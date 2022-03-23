@@ -2,7 +2,7 @@
 
 
 
-
+/* DEFAULT CONFG */
 * , *::after, *::before {
     box-sizing: border-box;
     margin: 0;
@@ -12,27 +12,18 @@
 }
 
 
-
+/* CORPO DO SITE */
 html,body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #121214;
     font-family: 'Ubuntu';
+    text-align: center;
     
     
 }
 
-
-.img-logo {
-    height: 130px;
-    width: 130px;
-}
-
-.img-logo:hover {
-    transform: scale(1.073);
-    transition: 0.4s ease;
-}
-
+/* MENU DE NAVEGAÇAO */
 .navbar {
     background: #0b0b0c;
     width: 100%;
@@ -44,10 +35,7 @@ html,body {
     top: 0;
     z-index: 999;
     transition: ease 0.8s;
-    
-    
-    
-    
+      
 }
 
 .navbar-list {
@@ -73,6 +61,18 @@ html,body {
     transition: 0.4s ease;
 }
 
+.img-logo {
+    height: 130px;
+    width: 130px;
+}
+
+.img-logo:hover {
+    transform: scale(1.073);
+    transition: 0.4s ease;
+}
+
+
+/* PRIMARY SECTION */
 .section-1 {
     background-image:url(images/img-fundo.svg);
     padding: 40vh 0;
@@ -89,22 +89,20 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     margin: 0 auto;
-    
     text-align: center;
     
 }
 
 .title-main {
  
-color: #fff;
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 38px;
-text-align: center;
-margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
     
 }
 
@@ -169,6 +167,11 @@ margin-bottom: 10px;
     transform: scale(1.030);
 }
 
+
+
+
+
+/* SECOND SECTION */
 .section-2 {
     padding: 16vh 0;
     font-family: 'Ubuntu';
@@ -200,7 +203,7 @@ margin-bottom: 10px;
 .sobre-content {
     font-size: 28px;
     margin-top: 10px;
-    
+    text-align: justify;
 }
 
 
