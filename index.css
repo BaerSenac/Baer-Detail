@@ -23,6 +23,16 @@ html,body {
     
 }
 
+@keyframes zoom {
+    0% {
+        scale: 1.073;
+    }
+
+    100% {
+        scale: 2.000;
+    }
+}
+
 /* MENU DE NAVEGAÇAO */
 .navbar {
     background: #0b0b0c;
@@ -81,6 +91,7 @@ html,body {
     background-repeat: no-repeat;
     width: 100%;
     background-size: 105%;
+    
   
 }
 
@@ -210,17 +221,17 @@ html,body {
 
 .btn-sobre {
     
-        background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
-        margin-top: 20px;
-        border:none;
-        border-radius: 10px;
-        font-family: 'Ubuntu';
-        font-size: 1.3rem;
-        width: 220px;
-        height: 58px;
-        cursor: pointer;
-        font-weight: normal;
-        transition: 0.8s ease-out;
+    background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+    margin-top: 20px;
+    border:none;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-size: 1.3rem;
+    width: 220px;
+    height: 58px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: 0.8s ease-out;
         
     
 }
@@ -268,6 +279,32 @@ html,body {
 
 
 @media screen and (max-width:1300px) {
+
+    
+
+    .sobre-container {
+        display: inline-flex;
+        flex-direction: row;
+        
+    }
+
+    .img1 {
+    
+        width: 200px;
+        height: 200px;
+    }
+    .img2 {
+        
+        width: 200px;
+        height: 200px;
+    }
+    .img3 {
+        
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:1400px) {
 
     
 
@@ -412,7 +449,7 @@ html,body {
     flex-direction: column;
     margin-bottom: 5rem;
 }
-}
+
 
 .container-title-carrossel {
     align-items: center;
@@ -450,9 +487,21 @@ input[type=radio]{
     width: 100%;
     height: 100%;
     background: white;
-    display: grid;
-    align-items: ;
+    display: grid;    
 }
+.img-carrossel-2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+    display: grid;    
+}
+.img-carrossel-3 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: grid;    
+}
+
 
 .title-card {
    color: #252525; 
@@ -469,6 +518,22 @@ input[type=radio]{
     color: #636060;
     text-align: initial;
     margin: 20px;
+}
+
+.btn-cards {
+    background: #161616;
+    color: #ebebeb;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-size: 1.3rem;
+    width: 230px;
+    height: 73px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: 0.8s ease-out;
+    margin: 61px;
 }
 
 .card-carrossel {
@@ -511,6 +576,43 @@ input[type=radio]{
     transform: translateX(0) scale(1);
     opacity: 1;
     z-index: 1;
+}
+
+@media screen and (max-width:1400px) {
+    .container-carrossel {
+        align-items: center;
+        width: 68%;
+        height: 90%;
+        max-width: 600px;
+        max-height: 600px;
+        display: flex;
+        transform-style: preserve-3d;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        margin-left: -65px;
+    }
+
+    .img-carrossel-1 {
+        width: 130%;
+        height: 100%;
+        background: white;
+        display: grid;
+        
+    }
+    .img-carrossel-2 {
+        width: 130%;
+        height: 100%;
+        background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
+        display: grid;
+        
+    }
+    .img-carrossel-3 {
+        width: 130%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        display: grid;
+        
+    }
 }
 
 .btn-galery {
