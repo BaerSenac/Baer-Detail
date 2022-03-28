@@ -609,7 +609,7 @@ input[type=radio]{
     .img-carrossel-3 {
         width: 140%;
         height: 100%;
-        background: rgb(0, 0, 0);
+        background: black;
         display: grid;
         
     }
