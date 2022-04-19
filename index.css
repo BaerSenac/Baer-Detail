@@ -476,28 +476,23 @@ input[type=radio]{
     display: none;
 }
 
-.img-carrossel {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
+
 
 .img-carrossel-1 {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background: white;
     display: grid;    
 }
 .img-carrossel-2 {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background: linear-gradient(90.52deg, #FF8A00 -15.14%, #D3A709 77.28%);
     display: grid;    
 }
 .img-carrossel-3 {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background: black;
     display: grid;    
 }
@@ -517,6 +512,10 @@ input[type=radio]{
 .list-card {
     color: #636060;
     text-align: initial;
+    
+}
+
+.list-card , li {
     margin: 20px;
 }
 
