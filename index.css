@@ -164,6 +164,8 @@ html,body {
     width: 60px;
 }
 
+
+
 .social_icon--link {
     color: #A2A2A2;
     transition: 0.4s ease;
@@ -174,7 +176,7 @@ html,body {
 }
 .btn-insta:hover {
     transition: 0.8s ease;
-    border: 2px solid #ffa600;
+    border: 2px solid #A2A2A2;
     transform: scale(1.030);
 }
 
@@ -381,6 +383,7 @@ html,body {
 .contato-content {
     margin: 20px;
     margin-top: 50px;
+    text-align: start;
 }
 
 .title-content {
