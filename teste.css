@@ -1,0 +1,45 @@
+/* DEFAULT CONFG */
+* , *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+    
+}
+
+html, body {
+    width: 100%;
+    background:#121214;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #000000;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+   
+}
+
+.navbar-div {
+    position: absolute;
+    margin-right: 70%;
+}
+
+.navbar-link {
+    color: white;
+    margin: 10PX;
+    justify-content: end;
+    padding-left: 40px;
+    
+}
+
+
+#imgLogo {
+    width: 60px;
+    
+}
